@@ -1,2 +1,33 @@
-# 2Sistemas15-03
-Atividade da aula de desenvolvimento de Sistemas do dia 15/03
+//pacote
+package sample.model;
+
+//classe Caminhao
+public class Caminhao extends Veiculo{
+
+    private int nEixos;
+
+    /**
+     * Construtor da classe
+     *
+     * @param nome
+     */
+    public Caminhao(String nome) {
+        super(nome);
+    }
+
+    /**
+     * Get e set
+     */
+    public int getnEixos() {
+        return nEixos;
+    }
+    public void setnEixos(int nEixos) {
+        this.nEixos = nEixos;
+    }
+
+//sobreescrita do TOString
+    @Override
+    public String toString(){
+        return super.toString() + "número de eixos: " + nEixos;
+    }
+}
